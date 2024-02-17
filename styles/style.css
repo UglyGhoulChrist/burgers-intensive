@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Semibold.ttf');
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url('../fonts/Merriweather-Black.ttf');
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: #191411;
+    font-family: 'Gilroy', sans-serif;
+    color: white;
+}
+
+.header {
+    padding: 40px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (width<1230px) {
+    .container {
+        margin: 0 15px;
+    }
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    vertical-align: bottom;
+}
+
+.menu {
+    margin-left: 191px;
+}
+
+.menu-list {
+    list-style: none;
+    display: flex;
+}
+
+.menu-item {
+    margin-right: 88px;
+}
+
+.menu-link {
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.menu-link:hover {
+    border-bottom: 2px solid white;
+}
+
+.currency {
+    border: 1px solid #fff;
+    border-radius: 5px;
+    width: 45px;
+    height: 45px;
+    /* text-align: center; */
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    margin-left: auto;
+    font-size: 18px;
+    user-select: none;
+}
