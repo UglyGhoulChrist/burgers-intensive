@@ -7,3 +7,4 @@
 - branch feature/why-content
 - branch feature/products-content
 - branch feature/order-content
+- branch feature/footer

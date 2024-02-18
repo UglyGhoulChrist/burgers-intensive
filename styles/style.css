@@ -347,3 +347,20 @@ body {
     line-height: 140%;
     outline: none;
 }
+
+/* Footer section */
+
+.footer {
+    padding: 60px 0;
+}
+
+.footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-copy {
+    font-weight: 600;
+    font-size: 16px;
+}
