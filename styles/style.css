@@ -20,6 +20,7 @@ body {
     overflow-x: hidden;
     background-color: #191411;
     font-family: 'Gilroy', sans-serif;
+    font-size: 16px;
     color: white;
 }
 
@@ -209,13 +210,6 @@ body {
 
 /* Products section */
 
-.product-button {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    min-width: 182px;
-}
-
 .products {
     background-image: url('../images/burgers/burgers-bg.svg');
     background-position: top center;
@@ -223,7 +217,7 @@ body {
     padding-bottom: 180px;
 }
 
-.products-items {
+.products-list {
     display: grid;
     grid-template-columns: repeat(3, 384px);
     gap: 24px;
@@ -231,32 +225,33 @@ body {
 }
 
 .product-item {
+    background-color: #211a16;
     border: 1px solid #353535;
     border-radius: 16px;
     padding: 30px;
-    background-color: #211a16;
-}
-
-.product-item-picture {
-    height: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 
 .product-item-image {
     width: 100%;
+    aspect-ratio: 1.3;
+    object-fit: contain;
 }
 
 .product-item-title {
-    margin: 24px 0;
     font-weight: 600;
     font-size: 24px;
     line-height: 29px;
+    text-align: center;
 }
 
 .product-item-text {
-    margin-bottom: 24px;
+    flex: auto;
     font-weight: 600;
-    font-size: 16px;
-    line-height: 140%;
+    line-height: 1.4;
+    text-align: justify;
 }
 
 .produt-item-extra {
@@ -275,9 +270,13 @@ body {
 
 .product-item-weight {
     font-weight: 300;
-    font-size: 16px;
     line-height: 18px;
     color: #757575;
 }
 
-.product-item-action {}
+.product-button {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    min-width: 182px;
+}
