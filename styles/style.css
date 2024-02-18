@@ -274,7 +274,12 @@ body {
     color: #757575;
 }
 
-.product-item-action {}
+.product-button {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    min-width: 182px;
+}
 
 /* Order section */
 
@@ -357,10 +362,4 @@ body {
 .footer-copy {
     font-weight: 600;
     font-size: 16px;
-
-    .product-button {
-        display: flex;
-        gap: 1rem;
-        justify-content: center;
-        min-width: 182px;
-    }
+}
