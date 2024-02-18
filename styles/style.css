@@ -281,3 +281,69 @@ body {
 }
 
 .product-item-action {}
+
+/* Order section */
+
+.order {
+    background-image: url('../images/order/order-bg.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding-bottom: 180px;
+    overflow: hidden;
+}
+
+.order .container {
+    position: relative;
+}
+
+.order-image {
+    position: absolute;
+    top: 0;
+    right: calc(100% - 764px);
+    z-index: -1;
+}
+
+.order-form {
+    border-radius: 16px;
+    border: 1px solid #353535;
+    background: #211A16;
+    margin-top: 60px;
+    width: 426px;
+    padding: 60px 40px;
+    box-sizing: border-box;
+    margin-left: 674px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.order-form-text {
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+    line-height: 29px;
+    margin-bottom: 20px;
+}
+
+.order-form-label {
+    background-color: #211a16;
+    border: 1px solid #da8023;
+    border-radius: 8px;
+    padding: 16px 10px;
+    width: 344px;
+    height: 62px;
+    display: flex;
+    align-items: center;
+}
+
+.order-form-input {
+    all: unset;
+    width: 100%;
+}
+
+.order-form-input::placeholder {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    outline: none;
+}
