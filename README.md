@@ -8,3 +8,4 @@
 - branch feature/products-content
 - branch feature/order-content
 - branch feature/footer
+- branch feature/js

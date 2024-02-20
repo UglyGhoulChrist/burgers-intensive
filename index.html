@@ -24,17 +24,17 @@
                 <nav class="menu">
                     <ul class="menu-list">
                         <li class="menu-item">
-                            <a class="menu-link" href="#">Почему у нас</a>
+                            <a class="menu-link" href="#section-why">Почему у нас</a>
                         </li>
                         <li class="menu-item">
-                            <a class="menu-link" href="#">Меню бургеров</a>
+                            <a class="menu-link" href="#section-products">Меню бургеров</a>
                         </li>
                         <li class="menu-item">
-                            <a class="menu-link" href="#">Оформление заказа</a>
+                            <a class="menu-link" href="#section-order">Оформление заказа</a>
                         </li>
                     </ul>
                 </nav>
-                <div class="currency" title="Изменить валюту">$</div>
+                <button id="currency" data-base-currency="$" class="currency" title="Изменить валюту">$</button>
             </div>
         </header>
 
@@ -44,18 +44,16 @@
                     <span class="main-small-info">Новое меню</span>
                     <h1 class="main-title">Бургер Чеддер</h1>
                     <p class="main-text">Мы обновили наше меню, спешите попробовать сезонные новинки и насладиться
-                        отличным
-                        вкусом наших бургеров. Готовим для вас лучшие бургеры в городе из отборной мраморной говядины.
+                        отличным вкусом наших бургеров. Готовим для вас лучшие бургеры в городе из отборной мраморной
+                        говядины.
                     </p>
-                    <div class="main-action">
-                        <button class="button">Смотреть меню</button>
-                    </div>
+                    <button id="send-menu" class="button">Смотреть меню</button>
                 </div>
                 <img class="main-image" src="./images/main-burger.webp" alt="Биг Бургер">
             </section>
         </main>
     </div>
-    <section class="why">
+    <section id="section-why" class="why">
         <div class="container">
             <h2 class="h2-title">почему нас выбирают?</h2>
             <div class="why-items">
@@ -81,7 +79,7 @@
         </div>
     </section>
 
-    <section class="products">
+    <section id="section-products" class="products">
         <div class="container">
             <h2 class="h2-title">выберите свой бургер</h2>
             <ul id="products-list" class="products-list">
@@ -90,21 +88,21 @@
         </div>
     </section>
 
-    <section class="order">
+    <section id="section-order" class="order">
         <div class="container">
             <h2 class="h2-title">Оформление заказа</h2>
             <img class="order-image" src="./images/order/order-image.png" alt="Бургер">
-            <form action="" class="order-form">
+            <form id="order-form" class="order-form">
                 <legend class="order-form-text">Заполните все данные и наш менеджер свяжется с вами для подтверждения
                     заказа</legend>
-                <label for="order" class="order-form-label">
-                    <input id="order" type="text" class="order-form-input" placeholder="Ваш заказ">
+                <label for="order-input" class="order-form-label">
+                    <input id="order-input" type="text" class="order-form-input" placeholder="Ваш заказ">
                 </label>
-                <label for="name" class="order-form-label">
-                    <input id="name" type="text" class="order-form-input" placeholder="Ваше имя">
+                <label for="name-input" class="order-form-label">
+                    <input id="name-input" type="text" class="order-form-input" placeholder="Ваше имя">
                 </label>
-                <label for="phone" class="order-form-label">
-                    <input id="phone" type="text" class="order-form-input" placeholder="Ваш телефон">
+                <label for="phone-input" class="order-form-label">
+                    <input id="phone-input" type="text" class="order-form-input" placeholder="Ваш телефон">
                 </label>
                 <button type="submit" class="button">Оформить заказ</button>
             </form>
